@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <script type="text/javascript" src="JavaScript/Vigenere.js"></script>
+    <title>Vigeneré Cipher</title>
+</head>
+
+<body>
+    <div id="wholepage">
+        <div class="navbar">
+            <a href="..\Home.html">CryptoKids</a>
+            <a href="Whatisacipher.html">What is Cryptography?</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Cipher Examples
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Caesar.html">Caesar Cipher</a>
+                    <a href="Vigenere.html">Vigeneré Cipher</a>
+                    <a href="Rail.html">Rail Fence Cipher</a>
+                </div>
+            </div>
+            <a href="Challenge.html">Challenges</a>
+        </div>
+        <section>
+            <h1 class="center">Vigeneré Cipher</h1>
+            <p>The Vigeneré cipher was originally described in 1553 by <a href="https://en.wikipedia.org/wiki/Giovan_Battista_Bellaso">Giovan Battista Bellaso</a>. However, in 1586 it was named after <a href="https://en.wikipedia.org/wiki/Blaise_de_Vigen%C3%A8re">Blaise de Vigenére</a> after he published his autokey cipher. The Vigeneré cipher, which is similar to the Caesar cipher, uses a series of linked alphabets to encode the message.
+                <br>
+                This type of cipher is known as a Polyalphabetical Substitution.
+                                <br> <br> 
+                <img class="vige" src="Images/VigenereTable.jpg" alt="Vigeneré Table"> To use this cipher you have to match the letter with the key. For example, take the word 'Write', seen below, with the key 'abc'. 
+                <br><br>
+                First you need to write out the key so it's long enough to match the 5 letter word 'Write', to do this you rewrite the key multiple times until it matches the length.
+                <br><br>
+                Then match each letter up to the corrosponding letter inside the table.
+                <br>
+                <table>
+                    <tr>
+                        <th>Input: </th>
+                        <td>W</td>
+                        <td>R</td>
+                        <td>I</td>
+                        <td>T</td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <th>Key: </th>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>A</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <th>Output: </th>
+                        <td>W</td>
+                        <td>S</td>
+                        <td>K</td>
+                        <td>T</td>
+                        <td>F</td>
+                    </tr>
+                </table>
+               <p>This shows the results of matching W with A and so on. 
+                <br><br>
+                Below is a tool that will allow you to encrypt your own messages using the Vigeneré cipher. Make sure that both encrypting/decrypting text go inside the input box for it to work.
+               </p>
+
+        </section>
+        <section style=" width:97%;height:150px">
+            <form action="#" method="get" onsubmit="return false">
+                <p style="float: left;">Input: </p>
+                <div class="vigiBox">
+                    <textarea id="inputCode">Write your secret message here</textarea>
+                </div>
+                <p style="float: left;">Key: </p>
+                <div class="vigiBox">
+                    <input style="margin-top: 20px; width: 2em" id="key" type="text" value="abc" placeholder="keyword"></input>
+                </div>
+                <p style="float: left;">Output: </p>
+                <div class="vigiBox">
+                    <textarea id="output"></textarea>
+                </div>
+                <div>
+                    <input type="button" value="Encrypt" onclick="doEncrypt(false)"></input>
+                    <input type="button" value="Decrypt" onclick="doEncrypt(true)"></input>
+                </div>
+            </form>
+        </section>
+        <a style="black: white; float:right">Copyright&#8482; Rhys Smith</a>
+</body>
+
+</html>

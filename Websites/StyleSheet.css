@@ -1,0 +1,261 @@
+ * {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 1.1em;
+ }
+
+ body {
+  background-color: lightblue;
+  letter-spacing: 0.1em;
+ }
+
+ p {
+  color: white;
+  text-align: left;
+  padding-left: 1em;
+  padding-right: 1em;
+ }
+
+ img {
+  border-radius: 8px;
+  width: 250px;
+  height: 350px;
+  float: right;
+ }
+
+ img.vige {
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin-right: 15px;
+ }
+
+ table,
+ th,
+ td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 5px;
+  color: white;
+ }
+
+ table.chal>tbody>tr>th {
+  width: 9em;
+ }
+
+ table.chal>caption {
+  padding: 10px;
+  font-size: 25px;
+ }
+
+ table.chal {
+  margin: auto;
+ }
+
+ table.chal>tbody>tr>td>input {
+  float: left;
+ }
+
+ table.chal>tbody>tr>td>label {
+  float: right;
+ }
+
+
+ section {
+  width: -webkit-fill-available;
+  float: left;
+  background-color: #8142f5;
+  border-width: 0.02em 0.02em;
+  border-radius: 25px;
+  border: 3px solid #333;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+ }
+
+ .sectionContainer {
+  background-color: lightblue;
+  border: lightblue;
+ }
+
+
+ .ceasarKey {
+  margin-top: 5em;
+  margin-left: 2em;
+  float: left;
+  color: white;
+ }
+
+ .ceasarKeyInput {
+  width: 80px;
+
+ }
+
+ a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+ }
+
+ a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+ }
+
+ h1 {
+  color: white;
+ }
+
+ h2 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+ }
+
+ h3 {
+  color: white;
+ }
+
+ label {
+  color: white;
+ }
+
+ .submitButton {
+  margin-left: 2em;
+  margin-right: 0.2em;
+  margin-top: 0.3em;
+  border-radius: 15px 15px 15px 15px;
+  float: right;
+
+ }
+
+ .inputBox {
+  float: left;
+  padding-right: 10px;
+ }
+
+
+ .inputBox>textarea {
+  width: 270px;
+  height: 235px;
+  border-radius: 25px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+ }
+
+ .vigiBox {
+  float: left;
+  padding-right: 10px;
+ }
+
+ .vigiBox>textarea {
+  width: 270px;
+  height: 100px;
+  border-radius: 25px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+ }
+
+
+ /* Navbar container */
+ .navbar {
+  overflow: hidden;
+  background-color: #333;
+  letter-spacing: 0.1em;
+  border-radius: 2em;
+  margin-bottom: 0.3em;
+ }
+
+
+ /* Links inside the navbar */
+ .navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 1.23em 1.8em;
+
+  text-decoration: none;
+  width: 100;
+
+ }
+
+ /* The dropdown container */
+ .dropdown {
+  float: left;
+  overflow: hidden;
+ }
+
+ /* Dropdown button */
+ .dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1em 1em;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+  min-width: 335.97px;
+  /*Set minimum width for this and drop down content */
+
+ }
+
+ /* Add a red background color to navbar links on hover */
+ .navbar a:hover,
+ .dropdown:hover .dropbtn {
+  background-color: #8142f5;
+ }
+
+ /* Dropdown content (hidden by default) */
+ .dropdown-content {
+  display: none;
+  color: white;
+  position: absolute;
+  background-color: #333;
+  min-width: 335.958px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 0.9;
+  border-radius: 0px 0px 25px 25px;
+ }
+
+ /* Links inside the dropdown */
+ .dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+ }
+
+
+ /* Add a grey background color to dropdown links on hover */
+ .dropdown-content a:hover {
+  background-color: #8142f5;
+
+ }
+
+ .dropdown-content a:hover:last-child {
+  background-color: #8142f5;
+  border-radius: 0px 0px 25px 25px;
+ }
+
+
+ /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content {
+  display: block;
+ }
+
+ .center {
+  text-align: center;
+  font-size: 100px;
+ }
+
+
+ #wholepage {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+ }

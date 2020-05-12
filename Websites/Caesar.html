@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+	<script type="text/javascript" src="JavaScript/Ceasar.js"></script>
+	<title>Caesar Cipher</title>
+</head>
+
+<body>
+	<div id="wholepage">
+		<div class="navbar">
+			<a href="..\Home.html">CryptoKids</a>
+			<a href="Whatisacipher.html">What is Cryptography?</a>
+			<div class="dropdown">
+				<button class="dropbtn">Cipher Examples
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="Caesar.html">Caesar Cipher</a>
+					<a href="Vigenere.html">Vigineré Cipher</a>
+					<a href="Rail.html">Rail Fence Cipher</a>
+					
+				</div>
+			</div>
+			<a href="Challenge.html">Challenges</a>
+		</div>
+		<section>
+			<h1 class="center">Caesar Cipher</h1>
+			<p>The Caesar cipher, named after <a href="https://en.wikipedia.org/wiki/Julius_Caesar">Julius Caesar</a>, is the oldest type of cipher. <img src="Images/JuliusCeasar.jpg" alt="Julius Caesar">It is a shift cipher, which means it moves along the alphabet according to it’s key. According to Roman historian <a href="https://en.wikipedia.org/wiki/Suetonius">Suetonius</a>, in his <i>'found in Life of Julius Caesar 56'</i>, Caesar used this cipher with a key shift of 3 when he needed to make any messages a secret.
+			<br>
+			<br>
+			An example of how this works is if we take the letter <i>A</i> and we use a shift key of <i>3</i> our original letter will be changed to <i>D</i>. Then <i>B</i> would become <i>E</i> and so on.
+			<br>
+			<br>
+			<img style="float:left;width: 350px; border-radius: 30px; margin-right: 10px;" src="Images/CeasarCoin.jpg" alt="Caesar Toy"> A physical example of a Caesar cipher, which has been used throughout time as a children's toy, is shown on the left.
+			<br>
+			<br>
+			The issue with this type of cipher is that once detected as a Ceasar cipher it can easily be decrypted by manueving the alphabet until the setence makes sense. A Caesar cipher is a well known type of cipher which is easily decoded, making this a poor choice of encrypting.
+			<br>
+			<br>
+			Below is a visual representation with an adjustable scale of how the alphabet would be rotated and a way for you to encrypt your own code! Try it out!
+			<br>
+			When using the encrpytion boxes make sure that you always enter the message in the input box to either decrypt or encrypt the message.
+			</p>
+		</section>
+
+</script>
+		
+		<section style=" width:70%;height:248.75px">
+			<p style="float: left;">Input: </p>
+			<div class="inputBox">
+				<textarea id="input" rows="6" cols="80">Put your own writing in here to encrypt!</textarea>
+			</div>
+			<p style="float: left;">Output: </p>
+			<div class="inputBox">
+				<textarea id="output" rows="6" cols="80">
+ 				</textarea>
+ 			</div>
+			<div>
+				<label style="color: white;">Key:</label>
+				<input  type="number" id="key" value="text here" class="ceasarKeyInput" />
+
+				<input style="margin-top: 10px;" type="button" value="Encrypt" onclick="ceasarEncrypt()" ></input>
+                <input  type="button" value="Decrypt" onclick="ceasarDecrypt()" ></input>
+
+
+			</div>
+		
+		</section>
+		<section style="width:auto;height:248.75px;float: right;">
+			<div style="color:white; float: left;">Use Shift key: <select name="key">
+					<option value="0" selected="selected">None</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+				</select>
+			</div>
+			</form>
+			<div id="canvas" style="height: 250px;width: 250px;">
+				<script src="JavaScript/Wheel.js"></script>
+		</section>
+			<a style="black: white; float:right">Copyright&#8482; Rhys Smith</a>
+</body>
+
+</html>

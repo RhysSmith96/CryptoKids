@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <script type="text/javascript" src="JavaScript/Rail.js"></script>
+    <title>Rail Fence Cipher</title>
+</head>
+
+<body>
+    <div id="wholepage">
+        <div class="navbar">
+            <a href="..\Home.html">CryptoKids</a>
+            <a href="Whatisacipher.html">What is Cryptography?</a>
+            <div class="dropdown">
+                <button class="dropbtn">Cipher Examples
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Caesar.html">Caesar Cipher</a>
+                    <a href="Vigenere.html">Vigineré Cipher</a>
+                    <a href="Rail.html">Rail Fence Cipher</a>
+                </div>
+            </div>
+            <a href="Challenge.html">Challenges</a>
+        </div>
+        <section>
+            <h1 class="center">Rail Fence Cipher</h1>
+            <br><br>
+            <p> The Rail Fence cipher is a type of transposition cipher. Transposition ciphers work by taking the input text and encrypting it as a different permutation of the original content. Take 'Hello', for example, and encrpyt it with a Transposition cipher could lead to a range of results, of which one example is 'Lehol'. At this stage an algorithm has been used that takes the message and jumbles up the content with the same letters.
+                <br>
+                <table align="right" style="margin-left:1em;margin-right:  3em;">
+                    <tr>
+                        <td>H</td>
+                        <td></td>
+                        <td>L</td>
+                        <td></td>
+                        <td>O</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>E</td>
+                        <td></td>
+                        <td>L</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p>
+                    For example, using the Rail Fence cipher on the word 'Hello' with a key of 2 will give the following results:
+                    <br>
+                    <br>
+                    <br>
+                    A way to look at this is to imagine you have fence. The fence has two rows of wood going through it. The beginning letter, H, will start at the top left row. You then keep every letter in the same position but go up and down the rows of wood. E would go on the second row, L on the first, as shown in the table. Take the first row of letters and use that for the first word. In this case the result is 'HLO'. Then add the remaining row onto the end to finish with the encrypted word of 'HLOEL'
+                </p>
+        </section>
+        <section style=" width:97%;height:150px">
+            <form action="#" method="get" onsubmit="return false">
+                <p style="float: left;">Input: </p>
+                <div class="vigiBox">
+                    <textarea id="inputCode">Write your secret message here</textarea>
+                </div>
+                <p style="float: left;">Key: </p>
+                <div class="vigiBox">
+                    <input style="margin-top: 20px" id="key" type="text" value=" " size="5" placeholder="keyword"></input>
+                </div>
+                <p style="float: left;">Output: </p>
+                <div class="vigiBox">
+                    <textarea id="output"></textarea>
+                </div>
+                <div>
+                    <input type="button" value="Encrypt" onclick="Encrypt()"></input>
+                    <input type="button" value="Decrypt" onclick="Decrypt()"></input>
+                </div>
+            </form>
+        </section>
+        <a style="black: white; float:right">Copyright&#8482; Rhys Smith</a>
+</body>
+
+</html>

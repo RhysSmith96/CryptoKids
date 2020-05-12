@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <script type="text/javascript" src="JavaScript/Rail.js"></script>
+    <title>Challenge!</title>
+    <script type="text/javascript" src="JavaScript/Challenges/challengeOne.js"></script>
+    <script type="text/javascript" src="JavaScript/Challenges/challengeTwo.js"></script>
+    <script type="text/javascript" src="JavaScript/Challenges/challengeThree.js"></script>
+    <script type="text/javascript" src="JavaScript/Challenges/challengeFour.js"></script>
+    <script type="text/javascript" src="JavaScript/Challenges/challengeFive.js"></script>
+    <script type="text/javascript" src="JavaScript/Challenges/challengeSix.js"></script>
+
+</head>
+
+<body>
+    <div id="wholepage">
+        <div class="navbar">
+            <a href="..\Home.html">CryptoKids</a>
+            <a href="Whatisacipher.html">What is Cryptography?</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Cipher Examples
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Caesar.html">Caesar Cipher</a>
+                    <a href="Vigenere.html">Vigineré Cipher</a>
+                    <a href="Rail.html">Rail Fence Cipher</a>
+                </div>
+            </div>
+            <a href="Challenge.html">Challenges</a>
+        </div>
+        <div>
+           <section style="width: 97%">
+                <h1 class="center">Challenges!</h1>
+                <h2>Try to answer the table below without using the tools provided!</h2>
+                <br>
+        </div>
+        </section>
+        <section display="center" style=" width:97%;">
+            <h2>Try and encrypt or decrypt these ciphers!</h2>
+            <table class="chal">
+                <caption>Note: you will need to determine which Cipher to use.</caption>
+                <tbody>
+                    <tr>
+                        <th>Plaintext</th>
+                        <th>Ciphered Text</th>
+                        <th>Key</th>
+                        <th>Submit</th>
+                    </tr>
+                    <tr>
+                        <td>Ciphers are cool!</td>
+                        <td><input type="text" id="inputOne"> </td>
+                        <td>4</td>
+                        <td><label id="outputOne"></label><input type="submit" value="Submit" onclick="correctOne()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="inputTwo"></td>
+                        <td>Cu e anbtoptrSinei u ujc!meccsfse</td>
+                        <td>3</td>
+                        <td><label id="outputTwo"></label><input type="submit" value="Submit" onclick="correctTwo()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="inputThree"></td>
+                        <td>Tnhade ksclmaiatmc kgdeeorhddat n tekh</td>
+                        <td>13</td>
+                        <td><label id="outputThree"></label><input type="submit" value="Submit" onclick="correctThree()"></td>
+                    </tr>
+                    <tr>
+                        <td>AJ Tracey live and direct</td>
+                        <td><input type="text" id="inputFour"> </td>
+                        <td>lad</td>
+                        <td><label id="outputFour"></label><input type="submit" value="Submit" onclick="correctFour()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="inputFive"></td>
+                        <td>Wzh kt pds heudpg ej vans Gwmja </td>
+                        <td>wow</td>
+                        <td><label id="outputFive"></label><input type="submit" value="Submit" onclick="correctFive()"></td>
+                    </tr>
+                    <tr>
+                        <td>The Coronavirus is the most annoying thing</td>
+                        <td><input type="text" id="inputSix"></td>
+                        <td>6</td>
+                        <td><label id="outputSix"></label><input type="submit" value="Submit" onclick="correctSix()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <a style="black: white; float:right">Copyright&#8482; Rhys Smith</a>
+    </div>
+</body>
+
+</html>
